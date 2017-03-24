@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { newExample } from './actions';
+// import { newExample } from './actions';
 import App from './App';
 
 const mapStateToProps = (state) => {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    changeExample: () => dispatch(newExample(ex))
+    // changeExample: () => dispatch(newExample(ex))
   }
 }
 

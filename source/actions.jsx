@@ -1,8 +1,8 @@
 // Actions types
 
-export const EXAMPLE = "EXAMPLE";
+// export const EXAMPLE = "EXAMPLE";
 
 // Actions creators
-export function newExample(ex) {
-  return { type: EXAMPLE, ex };
-}
+// export function newExample(ex) {
+//   return { type: EXAMPLE, ex };
+// }

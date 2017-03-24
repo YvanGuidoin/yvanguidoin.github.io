@@ -22,7 +22,7 @@ class App extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <p>{this.props.ex}</p>
+        // <p>{this.props.ex}</p>
       </div>
     )
   }
