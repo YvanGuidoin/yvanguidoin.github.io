@@ -23,7 +23,7 @@ module.exports = {
         query: {
           cacheDirectory: true,
           presets: ['es2015', 'react'],
-          plugins: ['transform-runtime']
+          plugins: ['transform-runtime', 'transform-object-rest-spread']
         }
       },
       {

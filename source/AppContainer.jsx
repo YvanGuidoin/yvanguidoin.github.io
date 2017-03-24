@@ -1,17 +1,18 @@
 import { connect } from 'react-redux';
 
-// import { newExample } from './actions';
+import { newFetchData } from './actions';
 import App from './App';
 
 const mapStateToProps = (state) => {
   return {
-    ex: state.ex
+    resume: state.resume,
+    fetching: state.fetching
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // changeExample: () => dispatch(newExample(ex))
+     getData: () => dispatch(newFetchData(null))
   }
 }
 

@@ -9,6 +9,9 @@ import controlApp from './reducers';
 // React Redux
 import { Provider } from 'react-redux';
 
+// Resume Data
+import DataMiddleware from './DataMiddleware';
+
 import AppContainer from './AppContainer';
 
 const logger = store => next => action => {
@@ -20,7 +23,7 @@ const logger = store => next => action => {
   return result
 }
 
-let store = createStore(controlApp, applyMiddleware(logger));
+let store = createStore(controlApp, applyMiddleware(logger, DataMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>
