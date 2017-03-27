@@ -7,8 +7,8 @@ export default function DataMiddleware(store) {
         .then(response => response.json())
         .then(data => console.info(data))
         // .then(data => store.dispatch(actions.newFetchDataSuccess(data)))
-        .catch(err => console.error(err))
+        .catch(err => console.error(err));
     }
     return next(action);
   }
-};
+}

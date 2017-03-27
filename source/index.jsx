@@ -15,12 +15,12 @@ import DataMiddleware from './DataMiddleware';
 import AppContainer from './AppContainer';
 
 const logger = store => next => action => {
-  console.group(action.type)
-  console.info('dispatching', action)
-  let result = next(action)
-  console.log('next state', store.getState())
-  console.groupEnd(action.type)
-  return result
+  console.group(action.type);
+  console.info('dispatching', action);
+  let result = next(action);
+  console.log('next state', store.getState());
+  console.groupEnd(action.type);
+  return result;
 }
 
 let store = createStore(controlApp, applyMiddleware(logger, DataMiddleware));

@@ -21,4 +21,9 @@ class App extends React.Component {
     }
 }
 
+App.propTypes = {
+  resume: React.PropTypes.object.isRequired,
+  getData: React.PropTypes.function.isRequired
+};
+
 export default App;
