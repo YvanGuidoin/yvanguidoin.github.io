@@ -7,8 +7,8 @@ export default function DataMiddleware(store) {
         .then(response => response.json())
         // .then(data => console.info(data))
         .then(data => {
-          setTimeout(() => store.dispatch(actions.newFetchDataReceived(null)), 1000);
-          setTimeout(() => store.dispatch(actions.newFetchDataSuccess(data.resume)), 2500);
+          setTimeout(() => store.dispatch(actions.newFetchDataReceived(null)), 200);
+          setTimeout(() => store.dispatch(actions.newFetchDataSuccess(data.resume)), 500);
         })
         .catch(err => console.error(err));
     }
