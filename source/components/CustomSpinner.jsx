@@ -8,18 +8,31 @@ class CustomSpinner extends React.Component {
     super(props);
     this.state = {
       position: 0,
-      character: ""
+      text: ""
     }
   }
 
   tick(){
-    var newChar = ANIMATION_SPINNER[this.state.position];
-    var newPos = this.state.position + 1;
-    newPos %= ANIMATION_SPINNER.length;
-    this.setState({
-      position: newPos,
-      character: newChar
-    })
+    let newChar, newPos;
+    if(this.props.isReceived){
+      newPos = this.state.position + 1;
+      newPos %= ANIMATION_SPINNER.length;
+      newChar = "DATA RECEIVED";
+      for(let i = 0; i < newPos; i++) newChar += ".";
+      this.setState({
+        position: newPos,
+        text: newChar
+      });
+    }
+    else {
+      newChar = ANIMATION_SPINNER[this.state.position];
+      newPos = this.state.position + 1;
+      newPos %= ANIMATION_SPINNER.length;
+      this.setState({
+        position: newPos,
+        text: newChar
+      });
+    }
   }
 
   componentDidMount() {
@@ -33,10 +46,14 @@ class CustomSpinner extends React.Component {
   render(){
     return (
       <div className="overlay">
-        {this.state.character}
+        <p className="glitch" data-text={this.state.text} >{this.state.text}</p>
       </div>
     )
   }
+}
+
+CustomSpinner.propTypes = {
+  isReceived: React.PropTypes.bool.isRequired
 }
 
 export default CustomSpinner;

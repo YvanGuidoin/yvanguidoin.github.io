@@ -6,7 +6,7 @@ import App from './App';
 const mapStateToProps = (state) => {
   return {
     resume: state.resume,
-    fetching: state.fetching
+    received: state.received
   }
 }
 

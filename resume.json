@@ -1,325 +1,323 @@
 {
-  "resume": {
-    "surname": "Guidoin",
-    "name": "Yvan",
-    "email": "yvan.guidoin@gmail.com",
-    "number": "+33769838684",
-    "birthday": "710510400000",
-    "nationality": "French",
-    "title": "Software Engineer",
-    "skills": {
-      
-    },
-    "experiences": [
-      {
-        "begin": "2015",
-        "end": "2016",
-        "title": "Information Technology Engineer",
-        "place": "CGI",
-        "description": "Main developer in a project team for Aeronautic projects\nDevelopment and use of SAP API Endpoints to automate management of issues in plane factories\nMultiple languages and technology use",
-        "tech_keywords": [
-          {
-            "word": "Javascript",
-            "size": 1,
-          },
-          {
-            "word": "REST",
-            "size": 1
-          },
-          {
-            "word": "SAP",
-            "size": 1
-          },
-          {
-            "word": "ABAP",
-            "size": 1
-          },
-          {
-            "word": "SAPUI5",
-            "size": 1
-          },
-          {
-            "word": "SAP XMII",
-            "size": 1
-          }
-        ],
-        "gen_keywords": [
-          {
-            "word": "Autonomy",
-            "size": 1
-          },
-          {
-            "word": "Versatility",
-            "size": 1
-          },
-          {
-            "word": "Analyse",
-            "size": 1
-          },
-          {
-            "word": "Teamwork",
-            "size": 1
-          },
-          {
-            "word": "Communication",
-            "size": 1
-          },
-          {
-            "word": "Solution design",
-            "size": 1
-          }
-        ]
-      },
-      {
-        "begin": "2012",
-        "end": "2015",
-        "title": "Analyst Programmer",
-        "place": "CGI",
-        "description": "Developer in a team in SAP projects for multiple clients in Europe\nABAP development for Airbus and Latécoère projects\nModification of projects in SAP XMII, Javascript and Bootstrap, need for a capacity to quickly adapt to new projects and needs",
-        "tech_keywords": [
-          {
-            "word": "Javascript",
-            "size": 1,
-          },
-          {
-            "word": "SAP",
-            "size": 1
-          },
-          {
-            "word": "ABAP",
-            "size": 1
-          },
-          {
-            "word": "SAPUI5",
-            "size": 1
-          },
-          {
-            "word": "Java",
-            "size": 1
-          },
-          {
-            "word": "SAP XMII",
-            "size": 1
-          }
-        ],
-        "gen_keywords": [
-          {
-            "word": "Aeronautic domain",
-            "size": 1
-          },
-          {
-            "word": "Versatility",
-            "size": 1
-          },
-          {
-            "word": "Self-training",
-            "size": 1
-          },
-          {
-            "word": "Teamwork",
-            "size": 1
-          }
-        ]
-      },
-      {
-        "begin": "2012",
-        "end": "2012",
-        "title": "Traineeship",
-        "place": "Rangueil Hospital in Toulouse",
-        "description": "Only developer in a service of Parasitology-Micology\nCreation of a software to teach medical diagnosis, using interactive scenarios in an embedded website",
-        "tech_keywords": [
-          {
-            "word": "Javascript",
-            "size": 1,
-          },
-          {
-            "word": "SQL",
-            "size": 1
-          },
-          {
-            "word": "PHP",
-            "size": 1
-          }
-        ],
-        "gen_keywords": [
-          {
-            "word": "Audit",
-            "size": 1
-          },
-          {
-            "word": "Vulgarization",
-            "size": 1
-          },
-          {
-            "word": "Initiative",
-            "size": 1
-          },
-          {
-            "word": "Autonomy",
-            "size": 1
-          }
-        ]
-      }
-    ],
-    "formations": [
-      {
-        "begin": "2012",
-        "end": "2015",
-        "title": "MIAGE Master’s degree",
-        "tech_keywords": [
-          {
-            "word": "Java",
-            "size": 1,
-          },
-          {
-            "word": "SQL",
-            "size": 1,
-          },
-          {
-            "word": "Javascript",
-            "size": 1,
-          },
-          {
-            "word": "JMS",
-            "size": 1,
-          },
-          {
-            "word": "COBOL",
-            "size": 1,
-          },
-          {
-            "word": "CORBA",
-            "size": 1,
-          },
-          {
-            "word": "Batch",
-            "size": 1,
-          }
-        ],
-        "gen_keywords": [
-          {
-            "word": "Project management",
-            "size": 1,
-          },
-          {
-            "word": "Information system design",
-            "size": 1,
-          },
-          {
-            "word": "Financial analysis",
-            "size": 1,
-          },
-          {
-            "word": "Databases",
-            "size": 1,
-          },
-          {
-            "word": "Teamwork",
-            "size": 1,
-          },
-          {
-            "word": "Mathematics",
-            "size": 1,
-          },
-          {
-            "word": "OOD",
-            "size": 1,
-          }
-        ]
-      },
-      {
-        "begin": "2010",
-        "end": "2012",
-        "title": "Higher National Diploma in IT",
-        "tech_keywords": [
-          {
-            "word": "Java",
-            "size": 1,
-          },
-          {
-            "word": "SQL",
-            "size": 1,
-          },
-          {
-            "word": "C/C++",
-            "size": 1,
-          },
-          {
-            "word": "RMI",
-            "size": 1,
-          },
-          {
-            "word": "Batch",
-            "size": 1,
-          }
-        ],
-        "gen_keywords": [
-          {
-            "word": "Development",
-            "size": 1,
-          },
-          {
-            "word": "Information system design",
-            "size": 1,
-          },
-          {
-            "word": "Accounting",
-            "size": 1,
-          },
-          {
-            "word": "Databases",
-            "size": 1,
-          },
-          {
-            "word": "Teamwork",
-            "size": 1,
-          },
-          {
-            "word": "Mathematics",
-            "size": 1,
-          },
-          {
-            "word": "OOD",
-            "size": 1,
-          }
-        ]
-      }
-    ],
-    "interests": [
-      {
-        "title": "Climbing",
-        "duration": "2 years",
-        "description": "as a hobby",
-        "gen_keywords": [
-          {
-            "word": "Motivation",
-            "size": 1
-          },
-          {
-            "word": "Failure management",
-            "size": 1
-          }
-        ]
-      },
-      {
-        "title": "Piano",
-        "duration": "10 years",
-        "description": "during my youth",
-        "gen_keywords": [
-          {
-            "word": "Focus",
-            "size": 1
-          },
-          {
-            "word": "Self expression",
-            "size": 1
-          },
-          {
-            "word": "Learning capacity",
-            "size": 1
-          }
-        ]
-      }
-    ]
-  }
+	"resume": {
+		"surname": "Guidoin",
+		"name": "Yvan",
+		"email": "yvan.guidoin@gmail.com",
+		"number": "+33769838684",
+		"birthday": "710510400000",
+		"nationality": "French",
+		"title": "Software Engineer",
+		"skills": {},
+		"experiences": [
+			{
+				"begin": "2015",
+				"end": "2016",
+				"title": "Information Technology Engineer",
+				"place": "CGI",
+				"description": "Main developer in a project team for Aeronautic projects\nDevelopment and use of SAP API Endpoints to automate management of issues in plane factories\nMultiple languages and technology use",
+				"tech_keywords": [
+					{
+						"word": "Javascript",
+						"size": 1
+					},
+					{
+						"word": "REST",
+						"size": 1
+					},
+					{
+						"word": "SAP",
+						"size": 1
+					},
+					{
+						"word": "ABAP",
+						"size": 1
+					},
+					{
+						"word": "SAPUI5",
+						"size": 1
+					},
+					{
+						"word": "SAP XMII",
+						"size": 1
+					}
+				],
+				"gen_keywords": [
+					{
+						"word": "Autonomy",
+						"size": 1
+					},
+					{
+						"word": "Versatility",
+						"size": 1
+					},
+					{
+						"word": "Analyse",
+						"size": 1
+					},
+					{
+						"word": "Teamwork",
+						"size": 1
+					},
+					{
+						"word": "Communication",
+						"size": 1
+					},
+					{
+						"word": "Solution design",
+						"size": 1
+					}
+				]
+			},
+			{
+				"begin": "2012",
+				"end": "2015",
+				"title": "Analyst Programmer",
+				"place": "CGI",
+				"description": "Developer in a team in SAP projects for multiple clients in Europe\nABAP development for Airbus and Latécoère projects\nModification of projects in SAP XMII, Javascript and Bootstrap, need for a capacity to quickly adapt to new projects and needs",
+				"tech_keywords": [
+					{
+						"word": "Javascript",
+						"size": 1
+					},
+					{
+						"word": "SAP",
+						"size": 1
+					},
+					{
+						"word": "ABAP",
+						"size": 1
+					},
+					{
+						"word": "SAPUI5",
+						"size": 1
+					},
+					{
+						"word": "Java",
+						"size": 1
+					},
+					{
+						"word": "SAP XMII",
+						"size": 1
+					}
+				],
+				"gen_keywords": [
+					{
+						"word": "Aeronautic domain",
+						"size": 1
+					},
+					{
+						"word": "Versatility",
+						"size": 1
+					},
+					{
+						"word": "Self-training",
+						"size": 1
+					},
+					{
+						"word": "Teamwork",
+						"size": 1
+					}
+				]
+			},
+			{
+				"begin": "2012",
+				"end": "2012",
+				"title": "Traineeship",
+				"place": "Rangueil Hospital in Toulouse",
+				"description": "Only developer in a service of Parasitology-Micology\nCreation of a software to teach medical diagnosis, using interactive scenarios in an embedded website",
+				"tech_keywords": [
+					{
+						"word": "Javascript",
+						"size": 1
+					},
+					{
+						"word": "SQL",
+						"size": 1
+					},
+					{
+						"word": "PHP",
+						"size": 1
+					}
+				],
+				"gen_keywords": [
+					{
+						"word": "Audit",
+						"size": 1
+					},
+					{
+						"word": "Vulgarization",
+						"size": 1
+					},
+					{
+						"word": "Initiative",
+						"size": 1
+					},
+					{
+						"word": "Autonomy",
+						"size": 1
+					}
+				]
+			}
+		],
+		"formations": [
+			{
+				"begin": "2012",
+				"end": "2015",
+				"title": "MIAGE Master’s degree",
+				"tech_keywords": [
+					{
+						"word": "Java",
+						"size": 1
+					},
+					{
+						"word": "SQL",
+						"size": 1
+					},
+					{
+						"word": "Javascript",
+						"size": 1
+					},
+					{
+						"word": "JMS",
+						"size": 1
+					},
+					{
+						"word": "COBOL",
+						"size": 1
+					},
+					{
+						"word": "CORBA",
+						"size": 1
+					},
+					{
+						"word": "Batch",
+						"size": 1
+					}
+				],
+				"gen_keywords": [
+					{
+						"word": "Project management",
+						"size": 1
+					},
+					{
+						"word": "Information system design",
+						"size": 1
+					},
+					{
+						"word": "Financial analysis",
+						"size": 1
+					},
+					{
+						"word": "Databases",
+						"size": 1
+					},
+					{
+						"word": "Teamwork",
+						"size": 1
+					},
+					{
+						"word": "Mathematics",
+						"size": 1
+					},
+					{
+						"word": "OOD",
+						"size": 1
+					}
+				]
+			},
+			{
+				"begin": "2010",
+				"end": "2012",
+				"title": "Higher National Diploma in IT",
+				"tech_keywords": [
+					{
+						"word": "Java",
+						"size": 1
+					},
+					{
+						"word": "SQL",
+						"size": 1
+					},
+					{
+						"word": "C/C++",
+						"size": 1
+					},
+					{
+						"word": "RMI",
+						"size": 1
+					},
+					{
+						"word": "Batch",
+						"size": 1
+					}
+				],
+				"gen_keywords": [
+					{
+						"word": "Development",
+						"size": 1
+					},
+					{
+						"word": "Information system design",
+						"size": 1
+					},
+					{
+						"word": "Accounting",
+						"size": 1
+					},
+					{
+						"word": "Databases",
+						"size": 1
+					},
+					{
+						"word": "Teamwork",
+						"size": 1
+					},
+					{
+						"word": "Mathematics",
+						"size": 1
+					},
+					{
+						"word": "OOD",
+						"size": 1
+					}
+				]
+			}
+		],
+		"interests": [
+			{
+				"title": "Climbing",
+				"duration": "2 years",
+				"description": "as a hobby",
+				"gen_keywords": [
+					{
+						"word": "Motivation",
+						"size": 1
+					},
+					{
+						"word": "Failure management",
+						"size": 1
+					}
+				]
+			},
+			{
+				"title": "Piano",
+				"duration": "10 years",
+				"description": "during my youth",
+				"gen_keywords": [
+					{
+						"word": "Focus",
+						"size": 1
+					},
+					{
+						"word": "Self expression",
+						"size": 1
+					},
+					{
+						"word": "Learning capacity",
+						"size": 1
+					}
+				]
+			}
+		]
+	}
 }
