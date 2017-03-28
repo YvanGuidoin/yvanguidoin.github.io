@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 class Menu extends React.PureComponent {
   render(){
     return (
-      <Navbar inverse>
+      <Navbar inverse fixedTop fluid>
           <Navbar.Header>
               <Navbar.Brand>
                   {this.props.name} {this.props.surname}
@@ -12,17 +12,20 @@ class Menu extends React.PureComponent {
               <Navbar.Toggle/>
           </Navbar.Header>
           <Navbar.Collapse>
-              <Nav pullRight>
-                  <NavItem href="#me">
+              <Nav role="tablist" bsStyle="pills" pullRight activeKey={this.props.scrollKey} id="navbar">
+                  <NavItem eventKey={1} href="#me">
                       Me
                   </NavItem>
-                  <NavItem href="#exp">
+                  <NavItem eventKey={2} href="#exp">
                       Experience
                   </NavItem>
-                  <NavItem href="#form">
+                  <NavItem eventKey={3} href="#form">
                       Formation
                   </NavItem>
-                  <NavItem href="#links">
+                  <NavItem eventKey={4} href="#int">
+                      Interests
+                  </NavItem>
+                  <NavItem eventKey={5} href="#links">
                       Contact
                   </NavItem>
               </Nav>
@@ -33,6 +36,7 @@ class Menu extends React.PureComponent {
 }
 
 Menu.propTypes = {
+  scrollKey: React.PropTypes.number.isRequired,
   name: React.PropTypes.string.isRequired,
   surname: React.PropTypes.string.isRequired
 }

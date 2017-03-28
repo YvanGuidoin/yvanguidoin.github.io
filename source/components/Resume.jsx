@@ -1,28 +1,45 @@
 import React from 'react';
-import { Col, Jumbotron, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
-class Resume extends React.PureComponent {
+import Parallax from "./Parallax";
+import Experiences from "./Experiences";
+import Formations from "./Formations";
+import Interests from "./Interests";
+import Contact from './Contact';
+import Me from "./Me";
+import ScrollerEmitter from './ScrollerEmitter';
+
+class Resume extends React.Component {
   render(){
     return (
-      <Col sm={10} md={10} smOffset={1} mdOffset={1}>
-        <Jumbotron>
-          <h1>{this.props.resume.title}</h1>
-          <Row>
-            <Col sm={5} md={5}>
-              <h3>{this.props.resume.nationality}</h3>
-            </Col>
-            <Col sm={5} md={5}>
-              <h4>{new Date(this.props.resume.birthday/1000).toLocaleDateString()}</h4>
-            </Col>
-          </Row>
-        </Jumbotron>
-        <p>{JSON.stringify(this.props.resume)}</p>
+      <Col className="paddingTopForNavbar">
+        <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={1}>
+          <Me resume={this.props.resume} />
+        </ScrollerEmitter>
+        <Parallax />
+        <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={2}>
+          <Experiences experiences={this.props.resume.experiences} />
+        </ScrollerEmitter>
+        <Parallax />
+        <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={3}>
+          <Formations formations={this.props.resume.formations} />
+        </ScrollerEmitter>
+        <Parallax />
+        <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={4}>
+          <Interests interests={this.props.resume.interests} />
+        </ScrollerEmitter>
+        <Parallax />
+        <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={5}>
+          <Contact resume={this.props.resume} />
+        </ScrollerEmitter>
+        <Parallax />
       </Col>
     );
   }
 }
 
 Resume.propTypes = {
+  scrollChange: React.PropTypes.func.isRequired,
   resume: React.PropTypes.object.isRequired
 }
 

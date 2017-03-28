@@ -3,7 +3,8 @@ import * as actions from './actions';
 const initialState = {
   resume: null,
   fetching: false,
-  received: false
+  received: false,
+  scrollKey: 1
 }
 
 export default function controlApp(state = initialState, action) {
@@ -24,6 +25,11 @@ export default function controlApp(state = initialState, action) {
         ...state,
         received: true
       };
+    case actions.SCROLL_KEY_CHANGE:
+      return {
+        ...state,
+        scrollKey: action.n
+      }
     default:
       return state;
   }

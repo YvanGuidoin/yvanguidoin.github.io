@@ -9,6 +9,9 @@ import controlApp from './reducers';
 // React Redux
 import { Provider } from 'react-redux';
 
+// CSS
+import './App.scss';
+
 // Resume Data
 import DataMiddleware from './DataMiddleware';
 

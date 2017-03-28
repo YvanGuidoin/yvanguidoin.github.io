@@ -1,10 +1,8 @@
 import React from 'react';
 
-import './App.scss';
-
 import CustomSpinner from './components/CustomSpinner';
-import Menu from './components/Menu';
-import Resume from './components/Resume';
+import MenuContainer from './components/MenuContainer';
+import ResumeContainer from './components/ResumeContainer';
 
 class App extends React.Component {
     componentDidMount() {
@@ -20,8 +18,8 @@ class App extends React.Component {
         if(isResumeNull) return (<CustomSpinner isReceived={this.props.received} />);
         else return (
           <div>
-            <Menu name={this.props.resume.name} surname={this.props.resume.surname} />
-            <Resume resume={this.props.resume} />
+            <MenuContainer name={this.props.resume.name} surname={this.props.resume.surname} />
+            <ResumeContainer resume={this.props.resume} />
           </div>
         );
     }
