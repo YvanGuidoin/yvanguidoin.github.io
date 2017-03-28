@@ -18,14 +18,17 @@ class Resume extends React.Component {
         </ScrollerEmitter>
         <Parallax />
         <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={2}>
+          //TODO groupe les listes ça c'est de la chiasse
           <Experiences experiences={this.props.resume.experiences} />
         </ScrollerEmitter>
         <Parallax />
         <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={3}>
+          //TODO groupe les listes ça c'est de la chiasse
           <Formations formations={this.props.resume.formations} />
         </ScrollerEmitter>
         <Parallax />
         <ScrollerEmitter onEnter={this.props.scrollChange} scrollKey={4}>
+          //TODO groupe les listes ça c'est de la chiasse
           <Interests interests={this.props.resume.interests} />
         </ScrollerEmitter>
         <Parallax />
