@@ -1,12 +1,12 @@
 import React from 'react';
-import { Label } from 'react-bootstrap';
+import { Badge } from 'react-bootstrap';
 
 class Keyword extends React.PureComponent {
   render(){
     return (
-      <Label bsStyle="default" className="marginRight2Px">
+      <Badge bsStyle="default" className="marginKeyword">
         {this.props.k.word}
-      </Label>
+      </Badge>
     );
   }
 }

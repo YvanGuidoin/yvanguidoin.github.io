@@ -14,7 +14,6 @@ class App extends React.Component {
 
     render() {
         const isResumeNull = (this.props.resume === null);
-
         if(isResumeNull) return (<CustomSpinner isReceived={this.props.received} />);
         else return (
           <div>

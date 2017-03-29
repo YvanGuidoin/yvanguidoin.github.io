@@ -4,11 +4,73 @@
 .paddingTopForNavbar {
   padding-top: 70px; // use for floating navbar top
 }
-
-.marginRight2Px {
-  margin-right: 2px;
+.marginZero {
+  margin: 0px;
+}
+.marginKeyword {
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+.desc {
+  background-color: inherit;
+  border: none;
 }
 
+
+//-------------------------- CHRONOLOGIC DISPLAY-----------------------------
+.chrono ul>li {
+  list-style-type: none;
+  position: relative;
+  padding-top: 25px;
+  border-left: 4px solid #ccc;
+}
+.chrono ul>li::before {
+  content: attr(data-date);
+  position: absolute;
+  top: 32px;
+  transform: translateX(-125%);
+  width: 80px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+.chrono ul>li::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 32px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.chrono ul>li>div {
+  position: relative;
+  top: 0;
+  left: 45px;
+  padding: 15px;
+  background: rgb(220, 220, 220);
+  border-radius: 5px;
+}
+.chrono div.marginZero>div>h2 {
+  margin-top: 0px;
+}
+.chrono ul>li>div::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(220, 220, 220) transparent transparent;
+}
+
+// ------------------------------ Begin phase ----------------------------------------
 .overlay{
   opacity:0.8;
   background-color:#000000;
