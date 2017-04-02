@@ -10,7 +10,7 @@ import Me from "./Me";
 import ScrollerEmitter from './ScrollerEmitter';
 import ChronoMaker from './ChronoMaker';
 
-class Resume extends React.Component {
+class Resume extends React.PureComponent {
   render(){
     let resume = this.props.resume, scrollChange = this.props.scrollChange; // LISIBILITY
     let experiences = resume.experiences.map((x, index) => <Experience datadate={x.begin} key={index} exp={x} />);
