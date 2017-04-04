@@ -3,10 +3,11 @@ import { Col, Glyphicon } from 'react-bootstrap';
 
 class ContactLink extends React.PureComponent {
   render(){
+    let glyph = (this.props.glyph) ? <Glyphicon glyph={this.props.glyph} /> : "";
     return (
         <Col sm={12} md={4}>
           <h2>
-            <Glyphicon glyph={this.props.glyph} />
+            {glyph}
             {this.props.children}
           </h2>
         </Col>
