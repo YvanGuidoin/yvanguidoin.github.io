@@ -1,11 +1,24 @@
 import React from 'react';
-import { Button, Glyphicon } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+
+import github from '../assets/github/GitHub-Mark-32px.png';
+
+import ContactLink from './ContactLink';
 
 class Contact extends React.PureComponent {
   render(){
     return (
       <div>
-        <Button><Glyphicon glyph="glyphicon-earphone" />{this.props.resume.number}</Button>
+        <ContactLink glyph="earphone">
+          <a href={"tel:"+this.props.resume.number}></a>{this.props.resume.number}
+        </ContactLink>
+        <ContactLink glyph="envelope">
+          {this.props.resume.email}
+        </ContactLink>
+        <ContactLink>
+          <Image src={github} width={32} alt="GitHub Miniature" />
+          {this.props.resume.github}
+        </ContactLink>
       </div>
     );
   }

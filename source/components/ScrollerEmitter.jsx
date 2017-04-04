@@ -6,7 +6,7 @@ class ScrollerEmitter extends React.PureComponent {
   render() {
     return (
       // to modify detection https://github.com/brigade/react-waypoint#prop-types
-      <section id={this.props.idZone}>
+      <section id={this.props.idZone} className="offsetTarget">
         <Waypoint topOffset={"50%"} bottomOffset={"-50%"} onEnter={()=> this.props.onEnter(this.props.scrollKey)}>
           <div>
             <Row>

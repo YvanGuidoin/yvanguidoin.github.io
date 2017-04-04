@@ -9,7 +9,7 @@ class Menu extends React.PureComponent {
               <Navbar.Brand>
                   {this.props.name} {this.props.surname}
               </Navbar.Brand>
-              <Navbar.Toggle/>
+              <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
               <Nav role="tablist" bsStyle="pills" pullRight activeKey={this.props.scrollKey} id="navbar">
