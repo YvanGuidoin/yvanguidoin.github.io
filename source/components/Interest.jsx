@@ -5,7 +5,7 @@ import Keyword from './Keyword';
 
 class Interest extends React.PureComponent {
   render(){
-    let genKeywords = this.props.int.gen_keywords.map((o, index) => <Keyword key={index} k={o} />);
+    let genKeywords = this.props.int.gen_keywords.map((o, index) => <Keyword key={index} k={o} type='gen' />);
     return (
       <Col sm={12} md={6} lg={4} className="separator">
         <div className="bulle">

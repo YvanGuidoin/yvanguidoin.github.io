@@ -19,7 +19,7 @@
 				"tech_keywords": [
 					{
 						"word": "Javascript",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "REST",
@@ -35,21 +35,21 @@
 					},
 					{
 						"word": "SAPUI5",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "SAP XMII",
-						"size": 1
+						"size": 2
 					}
 				],
 				"gen_keywords": [
 					{
 						"word": "Autonomy",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Versatility",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Analyse",
@@ -78,7 +78,7 @@
 				"tech_keywords": [
 					{
 						"word": "Javascript",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "SAP",
@@ -90,7 +90,7 @@
 					},
 					{
 						"word": "SAPUI5",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Java",
@@ -112,11 +112,11 @@
 					},
 					{
 						"word": "Self-training",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Teamwork",
-						"size": 1
+						"size": 2
 					}
 				]
 			},
@@ -142,6 +142,10 @@
 				],
 				"gen_keywords": [
 					{
+						"word": "Autonomy",
+						"size": 2
+					},
+					{
 						"word": "Audit",
 						"size": 1
 					},
@@ -151,11 +155,7 @@
 					},
 					{
 						"word": "Initiative",
-						"size": 1
-					},
-					{
-						"word": "Autonomy",
-						"size": 1
+						"size": 2
 					}
 				]
 			}
@@ -168,11 +168,11 @@
 				"tech_keywords": [
 					{
 						"word": "Java",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "SQL",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Javascript",
@@ -198,11 +198,11 @@
 				"gen_keywords": [
 					{
 						"word": "Project management",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Information system design",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Financial analysis",
@@ -210,7 +210,7 @@
 					},
 					{
 						"word": "Databases",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Teamwork",
@@ -233,11 +233,11 @@
 				"tech_keywords": [
 					{
 						"word": "Java",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "SQL",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "C/C++",
@@ -255,7 +255,7 @@
 				"gen_keywords": [
 					{
 						"word": "Development",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Information system design",
@@ -267,11 +267,11 @@
 					},
 					{
 						"word": "Databases",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Teamwork",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Mathematics",
@@ -291,6 +291,10 @@
 				"description": "It was as a hobby during my studies\nThe main goal was to challenge myself at getting better and release stress through physical activity",
 				"gen_keywords": [
 					{
+						"word": "Challenge",
+						"size": 2
+					},
+					{
 						"word": "Motivation",
 						"size": 1
 					},
@@ -307,7 +311,7 @@
 				"gen_keywords": [
 					{
 						"word": "Focus",
-						"size": 1
+						"size": 2
 					},
 					{
 						"word": "Self expression",
@@ -326,7 +330,7 @@
 				"gen_keywords": [
 					{
 						"word": "English",
-						"size": 1
+						"size": 2
 					}
 				]
 			}
