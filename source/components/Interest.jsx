@@ -1,5 +1,5 @@
 import React from 'react';
-import { Panel, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 import Keyword from './Keyword';
 
@@ -7,13 +7,13 @@ class Interest extends React.PureComponent {
   render(){
     let genKeywords = this.props.int.gen_keywords.map((o, index) => <Keyword key={index} k={o} />);
     return (
-      <Row>
-          <h3>{this.props.int.title}</h3> during <h4>{this.props.int.duration}</h4>
-          <p>{this.props.int.description}</p>
-          <Panel>
+      <Col sm={6} md={3} className="separator">
+        <div className="bulle">
+            <h2>{this.props.int.title} during <small>{this.props.int.duration}</small></h2>
+            <pre className="desc">{this.props.int.description}</pre>
             {genKeywords}
-          </Panel>
-      </Row>
+        </div>
+      </Col>
     );
   }
 }
