@@ -15,15 +15,25 @@
 .desc {
   background-color: inherit;
   border: none;
+  word-break: normal;
+  word-wrap: normal;
 }
 .separator {
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 .bulle {
   padding: 15px;
-  background: rgb(220, 220, 220);
+  background: gainsboro;
   border-radius: 5px;
+}
+.bulle h2 {
+  margin-top: 5px;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.contactAlign {
+  vertical-align: middle;
 }
 // http://stackoverflow.com/questions/4086107/html-positionfixed-page-header-and-in-page-anchors
 .offsetTarget:before {
@@ -40,59 +50,133 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 10px
 }
 
 //-------------------------- CHRONOLOGIC DISPLAY-----------------------------
-.chrono ul>li {
-  list-style-type: none;
-  position: relative;
-  padding-top: 25px;
-  border-left: 4px solid #ccc;
+@media(max-width:767px){
+  .chrono ul {
+    padding-left: 0px;
+  }
+  .chrono ul>li {
+    list-style-type: none;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .chrono ul>li::before {
+    content: attr(data-date);
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: white;
+    background: rgb(51, 51, 51);
+    line-height: 1;
+    z-index: 2;
+    border-radius: 0px 5px 0px 5px;
+  }
+  .chrono ul>li>div {
+    position: relative;
+    top: 0;
+  }
 }
-.chrono ul>li::before {
-  content: attr(data-date);
-  position: absolute;
-  top: 32px;
-  transform: translateX(-125%);
-  width: 80px;
-  height: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #ccc;
-  line-height: 1;
+@media (min-width:768px) and (max-width:991px){
+  .chrono ul>li {
+    list-style-type: none;
+    position: relative;
+    padding-top: 25px;
+    border-left: 4px solid #ccc;
+  }
+  .chrono ul>li::before {
+    content: attr(data-date);
+    position: absolute;
+    right: -45px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: white;
+    background: rgb(51, 51, 51);
+    line-height: 1;
+    z-index: 2;
+    border-radius: 0px 5px 0px 5px;
+  }
+  .chrono ul>li::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 32px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+  }
+  .chrono ul>li>div {
+    position: relative;
+    top: 0;
+    left: 45px;
+  }
+  .chrono ul>li>div::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent gainsboro transparent transparent;
+  }
 }
-.chrono ul>li::after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: 32px;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #ccc;
-}
-.chrono ul>li>div {
-  position: relative;
-  top: 0;
-  left: 45px;
-  padding: 15px;
-  background: rgb(220, 220, 220);
-  border-radius: 5px;
-}
-.chrono div.marginZero>div>h2 {
-  margin-top: 0px;
-}
-.chrono ul>li>div::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent rgb(220, 220, 220) transparent transparent;
+@media(min-width:992px){
+  .chrono ul>li {
+    list-style-type: none;
+    position: relative;
+    padding-top: 25px;
+    border-left: 4px solid #ccc;
+  }
+  .chrono ul>li::before {
+    content: attr(data-date);
+    position: absolute;
+    top: 32px;
+    transform: translateX(-125%);
+    width: 80px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ccc;
+    line-height: 1;
+  }
+  .chrono ul>li::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 32px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+  }
+  .chrono ul>li>div {
+    position: relative;
+    top: 0;
+    left: 45px;
+  }
+  .chrono ul>li>div::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent gainsboro transparent transparent;
+  }
 }
 
 // ------------------------------ Begin phase ----------------------------------------
@@ -108,8 +192,6 @@
 }
 // Thanks to https://css-tricks.com/glitch-effect-text-images-svg/ for the effect
 .glitch{
-  line-height: 100px;
-  font-size: 100px;
   position:relative;
   top: calc(50% - 50px);
   width: 100%;
@@ -118,6 +200,24 @@
   font-weight: bold;
   text-shadow: 0px 0px 10px #ffffff;
   font-family: monospace;
+}
+@media(max-width:767px){
+  .glitch {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media(min-width:768px){
+  .glitch {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media(min-width:992px){
+  .glitch {
+    font-size: 100px;
+    line-height: 100px;
+  }
 }
 @keyframes noise-anim{
   $steps:20;

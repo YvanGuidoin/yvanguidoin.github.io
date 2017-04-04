@@ -5,7 +5,7 @@ class ChronoMaker extends React.PureComponent {
   render() {
     let childrenBlock = this.props.children.map((x, index) => (
       <li data-date={x.props.datadate} key={index}>
-        <div>
+        <div className="bulle">
           <Row className="marginZero">
             {x}
           </Row>

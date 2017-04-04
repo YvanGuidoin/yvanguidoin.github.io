@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 
 import github from '../assets/github/GitHub-Mark-32px.png';
 
@@ -19,14 +18,13 @@ class Contact extends React.PureComponent {
     return (
       <div>
         <ContactLink glyph="earphone">
-          <a href={"tel:"+resume.number}>{this.formatNumber(resume.number)}</a>
+          <a href={"tel:"+resume.number}>&nbsp;{this.formatNumber(resume.number)}</a>
         </ContactLink>
         <ContactLink glyph="envelope">
-          {resume.email}
+          <a href={"mailto:"+resume.email}>&nbsp;{resume.email}</a>
         </ContactLink>
-        <ContactLink>
-          <Image src={github} width={32} alt="GitHub Miniature" />
-          {resume.github}
+        <ContactLink img={github} alt="GitHub Miniature">
+          <a href={resume.github} target="_blank">&nbsp;GitHub</a>
         </ContactLink>
       </div>
     );

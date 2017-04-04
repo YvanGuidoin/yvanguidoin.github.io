@@ -288,7 +288,7 @@
 			{
 				"title": "Climbing",
 				"duration": "2 years",
-				"description": "as a hobby",
+				"description": "It was as a hobby during my studies\nThe main goal was to challenge myself at getting better and release stress through physical activity",
 				"gen_keywords": [
 					{
 						"word": "Motivation",
@@ -315,6 +315,17 @@
 					},
 					{
 						"word": "Learning capacity",
+						"size": 1
+					}
+				]
+			},
+			{
+				"title": "Lived in Ireland",
+				"duration": "6 months",
+				"description": "It was a great experience and I would gladly go again, it's the main reason I'm searching a job in an english talking country",
+				"gen_keywords": [
+					{
+						"word": "English",
 						"size": 1
 					}
 				]

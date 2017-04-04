@@ -10,7 +10,7 @@ class ScrollerEmitter extends React.PureComponent {
         <Waypoint topOffset={"50%"} bottomOffset={"-50%"} onEnter={()=> this.props.onEnter(this.props.scrollKey)}>
           <div>
             <Row>
-              <Col sm={10} md={10} smOffset={1} mdOffset={1}>
+              <Col xs={12} sm={11} md={10} lg={10} xsOffset={0} smOffset={0} mdOffset={0} lgOffset={1}>
                 {this.props.children}
               </Col>
             </Row>
