@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/lib/Navbar';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
 
 class Menu extends React.PureComponent {
   render(){
@@ -14,21 +16,12 @@ class Menu extends React.PureComponent {
           </Navbar.Header>
           <Navbar.Collapse>
               <Nav role="tablist" bsStyle="pills" pullRight activeKey={this.props.scrollKey} id="navbar">
-                  <NavItem eventKey={1} href="#me">
-                      Me
-                  </NavItem>
-                  <NavItem eventKey={2} href="#exp">
-                      Experience
-                  </NavItem>
-                  <NavItem eventKey={3} href="#form">
-                      Formation
-                  </NavItem>
-                  <NavItem eventKey={4} href="#int">
-                      Interests
-                  </NavItem>
-                  <NavItem eventKey={5} href="#links">
-                      Contact
-                  </NavItem>
+                  <NavItem eventKey={1} href="#me">Me</NavItem>
+                  <NavItem eventKey={2} href="#desc">Desc</NavItem>
+                  <NavItem eventKey={3} href="#exp">Experience</NavItem>
+                  <NavItem eventKey={4} href="#form">Formation</NavItem>
+                  <NavItem eventKey={5} href="#int">Interests</NavItem>
+                  <NavItem eventKey={6} href="#links">Contact</NavItem>
               </Nav>
           </Navbar.Collapse>
       </Navbar>

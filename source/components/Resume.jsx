@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col } from 'react-bootstrap';
+import Col from 'react-bootstrap/lib/Col';
 
-import Parallax from "./Parallax";
+import Parallax from "./basics/Parallax";
 import Experience from './Experience';
 import Formation from "./Formation";
 import Interest from "./Interest";
 import Contact from './Contact';
 import Me from "./Me";
-import ScrollerEmitter from './ScrollerEmitter';
-import ChronoMaker from './ChronoMaker';
+import ScrollerEmitter from './basics/ScrollerEmitter';
+import ChronoMaker from './basics/ChronoMaker';
 
 class Resume extends React.PureComponent {
   render(){
@@ -23,23 +23,27 @@ class Resume extends React.PureComponent {
           <Me resume={resume} />
         </ScrollerEmitter>
         <Parallax />
-        <ScrollerEmitter onE={enter} onL={leave} scrollKey={2} idZone="exp">
+        <ScrollerEmitter onE={enter} onL={leave} scrollKey={2} idZone="desc">
+          <pre className="desc">{resume.description}</pre>
+        </ScrollerEmitter>
+        <Parallax />
+        <ScrollerEmitter onE={enter} onL={leave} scrollKey={3} idZone="exp">
           <ChronoMaker>
             {experiences}
           </ChronoMaker>
         </ScrollerEmitter>
         <Parallax />
-        <ScrollerEmitter onE={enter} onL={leave} scrollKey={3} idZone="form">
+        <ScrollerEmitter onE={enter} onL={leave} scrollKey={4} idZone="form">
           <ChronoMaker>
             {formations}
           </ChronoMaker>
         </ScrollerEmitter>
         <Parallax />
-        <ScrollerEmitter onE={enter} onL={leave} scrollKey={4} idZone="int">
+        <ScrollerEmitter onE={enter} onL={leave} scrollKey={5} idZone="int">
           {interests}
         </ScrollerEmitter>
         <Parallax />
-        <ScrollerEmitter onE={enter} onL={leave} scrollKey={5} idZone="links">
+        <ScrollerEmitter onE={enter} onL={leave} scrollKey={6} idZone="links">
           <Contact resume={resume} />
         </ScrollerEmitter>
         <Parallax />

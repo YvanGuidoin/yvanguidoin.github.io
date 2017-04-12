@@ -1,14 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   cache: true,
-  devtool: 'cheap-module-source-map',
+  devtool: 'eval',
   entry: './source/index.jsx',
   output: {
     path: path.resolve(__dirname, ''),
-    filename: 'main.bundle.js',
+    filename: "main.bundle.js",
     pathinfo: true
   },
   resolve: {
@@ -22,8 +23,8 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           cacheDirectory: true,
-          presets: ['es2015', 'react'],
-          plugins: ['transform-runtime', 'transform-object-rest-spread']
+          presets: [['es2015', {modules: false, loose: true}], 'react'],
+          plugins: ['lodash', 'transform-runtime', 'transform-object-rest-spread', 'transform-react-inline-elements', 'transform-react-constant-elements']
         }
       },
       {
@@ -49,16 +50,31 @@ module.exports = {
     ]
   },
   plugins: [
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('production')
+    // }),
+    // new LodashModuleReplacementPlugin(),
+    // new webpack.optimize.AggressiveMergingPlugin(),
+    // new webpack.optimize.OccurrenceOrderPlugin(),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   mangle: true,
+    //   compress: {
+    //     warnings: false,
+    //     pure_getters: true,
+    //     unsafe: true,
+    //     unsafe_comps: true,
+    //     screw_ie8: true
+    //   },
+    //   output: {
+    //     comments: false,
+    //   },
+    //   exclude: [/\.min\.js$/gi] // skip pre-minified libs
+    // }),
+    // new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'source/index.html',
       favicon: 'source/assets/favicon.ico'
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {'NODE_ENV': JSON.stringify('production')}
-    }),
-    new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({})
+    })
   ]
 }

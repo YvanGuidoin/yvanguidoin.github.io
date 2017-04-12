@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col } from 'react-bootstrap';
+import Col from 'react-bootstrap/lib/Col';
 
-import Keyword from './Keyword';
+import Keyword from './basics/Keyword';
 
 class Interest extends React.PureComponent {
   render(){

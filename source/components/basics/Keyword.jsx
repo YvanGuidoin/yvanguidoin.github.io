@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Badge } from 'react-bootstrap';
+import Badge from 'react-bootstrap/lib/Badge';
 
 class Keyword extends React.PureComponent {
   render(){

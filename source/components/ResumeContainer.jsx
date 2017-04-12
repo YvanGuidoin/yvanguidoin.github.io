@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { newEnterSection, newLeaveSection } from '../actions';
+import { newEnterSection, newLeaveSection } from '../redux/actions';
 import Resume from './Resume';
 
 const mapStateToProps = (state) => {

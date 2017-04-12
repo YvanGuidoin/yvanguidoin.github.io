@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row } from 'react-bootstrap';
+import Row from 'react-bootstrap/lib/Row';
 
 class ChronoMaker extends React.PureComponent {
   render() {

@@ -1,36 +1,32 @@
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+import { render } from 'react-dom';
 // Redux
 import { createStore, applyMiddleware } from 'redux';
-import controlApp from './reducers';
-
+import controlApp from './redux/reducers';
 // React Redux
 import { Provider } from 'react-redux';
-
 // CSS
 import './App.scss';
-
 // Resume Data
-import DataMiddleware from './DataMiddleware';
+import DataMiddleware from './redux/DataMiddleware';
 // Section handling
-import SectionMiddleware from './SectionMiddleware';
+import SectionMiddleware from './redux/SectionMiddleware';
+// App base container
+import AppContainer from './components/AppContainer';
 
-import AppContainer from './AppContainer';
-
-const logger = store => next => action => {
-  console.group(action.type);
-  console.info('dispatching', action);
-  let result = next(action);
-  console.log('next state', store.getState());
-  console.groupEnd(action.type);
-  return result;
-}
+// const logger = store => next => action => {
+//   console.group(action.type);
+//   console.info('dispatching', action);
+//   let result = next(action);
+//   console.log('next state', store.getState());
+//   console.groupEnd(action.type);
+//   return result;
+// }
 
 let store = createStore(controlApp, applyMiddleware(DataMiddleware, SectionMiddleware));
 
-ReactDOM.render(
+render(
   <Provider store={store}>
     <AppContainer />
   </Provider>,

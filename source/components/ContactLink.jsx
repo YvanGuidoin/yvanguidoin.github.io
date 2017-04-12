@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col, Glyphicon, Image } from 'react-bootstrap';
+import Col from 'react-bootstrap/lib/Col';
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import Image from 'react-bootstrap/lib/Image';
 
 class ContactLink extends React.PureComponent {
   render(){

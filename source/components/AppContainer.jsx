@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { newFetchData } from './actions';
+import { newFetchData } from '../redux/actions';
 import App from './App';
 
 const mapStateToProps = (state) => {

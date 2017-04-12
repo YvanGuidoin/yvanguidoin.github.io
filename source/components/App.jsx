@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CustomSpinner from './components/CustomSpinner';
-import MenuContainer from './components/MenuContainer';
-import ResumeContainer from './components/ResumeContainer';
+import CustomSpinner from './basics/CustomSpinner';
+import MenuContainer from './MenuContainer';
+import ResumeContainer from './ResumeContainer';
 
 class App extends React.Component {
     componentDidMount() {

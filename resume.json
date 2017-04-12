@@ -8,7 +8,35 @@
 		"nationality": "French",
 		"title": "Software Engineer",
 		"github": "https://github.com/YvanGuidoin",
-		"skills": {},
+		"skills": {
+			"tech": [
+				{
+					"subject": "Docker",
+					"percent": 60,
+					"comment": ""
+				}
+			],
+			"code": [
+				{
+					"subject": "Javascript",
+					"percent": 80,
+					"comment": ""
+				}
+			],
+			"languages": [
+				{
+					"subject": "French",
+					"percent": 100,
+					"comment": "My native language"
+				},
+				{
+					"subject": "English",
+					"percent": 80,
+					"comment": ""
+				}
+			]
+		},
+		"description": "I'm an IT Engineer searching a job in Edinburgh",
 		"experiences": [
 			{
 				"begin": "2015",
