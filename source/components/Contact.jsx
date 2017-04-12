@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import github from '../assets/github/GitHub-Mark-32px.png';
+import linkedin from '../assets/btn_profile_bluetxt_80x15_linkedin.png';
 
 import ContactLink from './ContactLink';
 
@@ -26,6 +27,11 @@ class Contact extends React.PureComponent {
         </ContactLink>
         <ContactLink img={github} alt="GitHub Miniature">
           <a href={resume.github} target="_blank">&nbsp;GitHub</a>
+        </ContactLink>
+        <ContactLink>
+          <a href={resume.linkedin} target="_blank">
+            <img src={linkedin} alt="Yvan Guidoin's profile on LinkedIn" />
+          </a>
         </ContactLink>
       </div>
     );
