@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ANIMATION_SPINNER = ["|","/","-","\\"];
 
@@ -53,7 +54,7 @@ class CustomSpinner extends React.Component {
 }
 
 CustomSpinner.propTypes = {
-  isReceived: React.PropTypes.bool.isRequired
+  isReceived: PropTypes.bool.isRequired
 }
 
 export default CustomSpinner;

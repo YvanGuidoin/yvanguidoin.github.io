@@ -14,6 +14,8 @@ import './App.scss';
 
 // Resume Data
 import DataMiddleware from './DataMiddleware';
+// Section handling
+import SectionMiddleware from './SectionMiddleware';
 
 import AppContainer from './AppContainer';
 
@@ -26,7 +28,7 @@ const logger = store => next => action => {
   return result;
 }
 
-let store = createStore(controlApp, applyMiddleware(logger, DataMiddleware));
+let store = createStore(controlApp, applyMiddleware(DataMiddleware, SectionMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>

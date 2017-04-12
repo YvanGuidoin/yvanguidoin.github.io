@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Keyword from './Keyword';
 
@@ -18,7 +19,7 @@ class Experience extends React.PureComponent {
 }
 
 Experience.propTypes = {
-  exp: React.PropTypes.object.isRequired
+  exp: PropTypes.object.isRequired
 }
 
 export default Experience;

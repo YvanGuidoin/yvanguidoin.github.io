@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Badge } from 'react-bootstrap';
 
 class Keyword extends React.PureComponent {
@@ -16,8 +17,8 @@ class Keyword extends React.PureComponent {
 }
 
 Keyword.propTypes = {
-  type: React.PropTypes.oneOf(['tech', 'gen']).isRequired,
-  k: React.PropTypes.object.isRequired
+  type: PropTypes.oneOf(['tech', 'gen']).isRequired,
+  k: PropTypes.object.isRequired
 }
 
 export default Keyword;

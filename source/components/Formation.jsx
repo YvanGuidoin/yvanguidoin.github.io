@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Keyword from './Keyword';
 
@@ -18,7 +19,7 @@ class Formation extends React.PureComponent {
 }
 
 Formation.propTypes = {
-  form: React.PropTypes.object.isRequired
+  form: PropTypes.object.isRequired
 }
 
 export default Formation;

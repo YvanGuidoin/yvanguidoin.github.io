@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   cache: true,
-  devtool: 'eval',
+  devtool: 'cheap-module-source-map',
   entry: './source/index.jsx',
   output: {
     path: path.resolve(__dirname, ''),
@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           cacheDirectory: true,
@@ -49,39 +49,16 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.optimize.AggressiveMergingPlugin(),
-    // new webpack.optimize.OccurrenceOrderPlugin(),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   mangle: true,
-    //   comments: false,
-    //   compress: {
-    //     unused: true,
-    //     dead_code: true,
-    //     warnings: false,
-    //     pure_getters: true,
-    //     drop_debugger: true,
-    //     conditionals: true,
-    //     evaluate: true,
-    //     drop_console: true,
-    //     sequences: true,
-    //     unsafe: true,
-    //     unsafe_comps: true,
-    //     screw_ie8: true,
-    //     booleans: true
-    //   },
-    //   output: {
-    //     comments: false,
-    //   }
-    // }),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'source/index.html',
       favicon: 'source/assets/favicon.ico'
-    })
-  ],
-  node: {
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty'
-  }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {'NODE_ENV': JSON.stringify('production')}
+    }),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({})
+  ]
 }

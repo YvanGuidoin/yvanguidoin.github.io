@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Col } from 'react-bootstrap';
 
 import Keyword from './Keyword';
@@ -19,7 +20,7 @@ class Interest extends React.PureComponent {
 }
 
 Interest.propTypes = {
-  int: React.PropTypes.object.isRequired
+  int: PropTypes.object.isRequired
 }
 
 export default Interest;

@@ -1,16 +1,16 @@
 import { connect } from 'react-redux';
 
-import { newScrollKeyChange } from '../actions';
+import { newEnterSection, newLeaveSection } from '../actions';
 import Resume from './Resume';
 
 const mapStateToProps = (state) => {
-  return {
-  }
+  return {}
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-     scrollChange: (n) => dispatch(newScrollKeyChange(n))
+     enterSection: (n) => dispatch(newEnterSection(n)),
+     leaveSection: (n) => dispatch(newLeaveSection(n))
   }
 }
 

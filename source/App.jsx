@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import CustomSpinner from './components/CustomSpinner';
 import MenuContainer from './components/MenuContainer';
@@ -25,9 +26,9 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  resume: React.PropTypes.object,
-  received: React.PropTypes.bool.isRequired,
-  getData: React.PropTypes.func.isRequired
+  resume: PropTypes.object,
+  received: PropTypes.bool.isRequired,
+  getData: PropTypes.func.isRequired
 };
 
 export default App;

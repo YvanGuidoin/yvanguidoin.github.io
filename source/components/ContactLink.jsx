@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Col, Glyphicon, Image } from 'react-bootstrap';
 
 class ContactLink extends React.PureComponent {
@@ -16,12 +17,12 @@ class ContactLink extends React.PureComponent {
 }
 
 ContactLink.propTypes = {
-  glyph: React.PropTypes.string,
-  img: React.PropTypes.string,
-  alt: React.PropTypes.string,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.element,
-    React.PropTypes.arrayOf(React.PropTypes.element)
+  glyph: PropTypes.string,
+  img: PropTypes.string,
+  alt: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
   ])
 }
 

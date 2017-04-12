@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image, Jumbotron, Media, PageHeader } from 'react-bootstrap';
 
 import yvan from '../assets/yvan.jpg';
@@ -31,7 +32,7 @@ class Me extends React.PureComponent {
 }
 
 Me.propTypes = {
-  resume: React.PropTypes.object.isRequired
+  resume: PropTypes.object.isRequired
 }
 
 export default Me;

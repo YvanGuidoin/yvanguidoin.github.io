@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Row } from 'react-bootstrap';
 
 class ChronoMaker extends React.PureComponent {
@@ -23,7 +24,7 @@ class ChronoMaker extends React.PureComponent {
 }
 
 ChronoMaker.propTypes = {
-  children: React.PropTypes.arrayOf(React.PropTypes.element)
+  children: PropTypes.arrayOf(PropTypes.element)
 }
 
 export default ChronoMaker;

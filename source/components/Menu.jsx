@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 class Menu extends React.PureComponent {
@@ -36,9 +37,9 @@ class Menu extends React.PureComponent {
 }
 
 Menu.propTypes = {
-  scrollKey: React.PropTypes.number.isRequired,
-  name: React.PropTypes.string.isRequired,
-  surname: React.PropTypes.string.isRequired
+  scrollKey: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  surname: PropTypes.string.isRequired
 }
 
 export default Menu;

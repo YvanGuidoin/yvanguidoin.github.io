@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import github from '../assets/github/GitHub-Mark-32px.png';
 
@@ -32,7 +33,7 @@ class Contact extends React.PureComponent {
 }
 
 Contact.propTypes = {
-  resume: React.PropTypes.object.isRequired
+  resume: PropTypes.object.isRequired
 }
 
 export default Contact;
