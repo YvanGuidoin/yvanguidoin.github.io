@@ -4,6 +4,8 @@ import Image from 'react-bootstrap/lib/Image';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 import Media from 'react-bootstrap/lib/Media';
 import PageHeader from 'react-bootstrap/lib/PageHeader';
+import Col from 'react-bootstrap/lib/Col';
+import Row from 'react-bootstrap/lib/Row';
 
 import yvan from '../assets/yvan.jpg';
 
@@ -19,7 +21,12 @@ class Me extends React.PureComponent {
 
   render(){
     let resume = this.props.resume; // lisibility
-    let languages = resume.skills.languages.map((o) => <Skill s={o} />);
+    let techs = resume.skills.techs.map((o, index) => <Skill s={o} k={index} key={index} />);
+    let codes = resume.skills.codes.map((o, index) => <Skill s={o} k={index} key={index} />);
+    let languages = resume.skills.languages.map((o, index) => <Skill s={o} k={index} key={index} />);
+    let styleSkills = {
+      paddingBottom: 25
+    }
     return (
       <Jumbotron>
         <Media>
@@ -31,7 +38,17 @@ class Me extends React.PureComponent {
             <p>
               {this.toAgeFromBirthdayTime(resume.birthday)}, {resume.nationality}
             </p>
-            <p>{languages}</p>
+            <Row>
+              <Col style={styleSkills} sm={6} md={4} lg={3}>
+                {techs}
+              </Col>
+              <Col style={styleSkills} sm={6} md={4} lg={3}>
+                {codes}
+              </Col>
+              <Col style={styleSkills} sm={6} md={4} lg={3}>
+                {languages}
+              </Col>
+            </Row>
           </Media.Body>
         </Media>
       </Jumbotron>

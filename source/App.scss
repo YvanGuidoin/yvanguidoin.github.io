@@ -2,12 +2,8 @@
 // @import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
-.paddingTopForNavbar {
-  padding-top: 70px; // use for floating navbar top
-}
-.marginZero {
-  margin: 0px;
-}
+.paddingTopForNavbar { padding-top: 70px; }// use for floating navbar top
+.marginZero { margin: 0px; }
 .marginKeyword {
   margin-bottom: 4px;
   margin-right: 4px;
@@ -18,26 +14,17 @@
   word-break: normal;
   word-wrap: normal;
 }
-.separator {
-  padding-top: 15px;
-}
-.separator:nth-last-child(1){
-  margin-bottom: 15px;
-}
+.separator { padding-top: 15px; }
+.separator:nth-last-child(1){ margin-bottom: 15px; }
 .bulle {
   padding: 15px;
   background: gainsboro;
   border-radius: 5px;
 }
-.bulle h2 {
-  margin-top: 5px;
-}
-.textAlignCenter {
-  text-align: center;
-}
-.contactAlign {
-  vertical-align: middle;
-}
+.bulle h2 { margin-top: 5px; }
+.textAlignCenter { text-align: center; }
+.floatRight { float: right; }
+.contactAlign { vertical-align: middle; }
 .offsetTarget:before { // http://stackoverflow.com/questions/4086107/html-positionfixed-page-header-and-in-page-anchors
   content:"";
   display:block;
@@ -56,9 +43,7 @@
 
 //-------------------------- CHRONOLOGIC DISPLAY-----------------------------
 @media(max-width:767px){
-  .chrono ul {
-    padding-left: 0px;
-  }
+  .chrono ul { padding-left: 0px; }
   .chrono ul>li {
     list-style-type: none;
     position: relative;
@@ -85,18 +70,14 @@
   }
 }
 @media (min-width:768px) and (max-width:991px){
-  .chrono ul {
-    margin-bottom: 0px;
-  }
+  .chrono ul { margin-bottom: 0px; }
   .chrono ul>li {
     list-style-type: none;
     position: relative;
     padding-top: 25px;
     border-left: 4px solid #ccc;
   }
-  .chrono ul>li:nth-last-child(1) {
-    padding-bottom: 15px;
-  }
+  .chrono ul>li:nth-last-child(1) { padding-bottom: 15px; }
   .chrono ul>li::before {
     content: attr(data-date);
     position: absolute;
@@ -139,18 +120,14 @@
   }
 }
 @media(min-width:992px){
-  .chrono ul {
-    margin-bottom: 0px;
-  }
+  .chrono ul { margin-bottom: 0px; }
   .chrono ul>li {
     list-style-type: none;
     position: relative;
     padding-top: 25px;
     border-left: 4px solid #ccc;
   }
-  .chrono ul>li:nth-last-child(1) {
-    padding-bottom: 15px;
-  }
+  .chrono ul>li:nth-last-child(1) { padding-bottom: 15px; }
   .chrono ul>li::before {
     content: attr(data-date);
     position: absolute;

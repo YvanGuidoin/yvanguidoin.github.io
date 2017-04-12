@@ -9,14 +9,14 @@
 		"title": "Software Engineer",
 		"github": "https://github.com/YvanGuidoin",
 		"skills": {
-			"tech": [
+			"techs": [
 				{
 					"subject": "Docker",
 					"percent": 60,
 					"comment": ""
 				}
 			],
-			"code": [
+			"codes": [
 				{
 					"subject": "Javascript",
 					"percent": 80,

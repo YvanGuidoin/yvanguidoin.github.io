@@ -17,7 +17,7 @@ class Menu extends React.PureComponent {
           <Navbar.Collapse>
               <Nav role="tablist" bsStyle="pills" pullRight activeKey={this.props.scrollKey} id="navbar">
                   <NavItem eventKey={1} href="#me">Me</NavItem>
-                  <NavItem eventKey={2} href="#desc">Desc</NavItem>
+                  <NavItem eventKey={2} href="#desc">Introduction</NavItem>
                   <NavItem eventKey={3} href="#exp">Experience</NavItem>
                   <NavItem eventKey={4} href="#form">Formation</NavItem>
                   <NavItem eventKey={5} href="#int">Interests</NavItem>
