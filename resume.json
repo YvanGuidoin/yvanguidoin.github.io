@@ -12,16 +12,51 @@
 		"skills": {
 			"techs": [
 				{
+					"subject": "SAP XMII",
+					"percent": 80,
+					"comment": "Projects at CGI for Airbus"
+				},
+				{
 					"subject": "Docker",
 					"percent": 60,
-					"comment": ""
+					"comment": "Learn myself during my 6 months in Dublin for personal projects use and testing"
+				},
+				{
+					"subject": "MySQL/Oracle",
+					"percent": 60,
+					"comment": "Mainly used in projects for my school studies"
+				},
+				{
+					"subject": "SAP",
+					"percent": 40,
+					"comment": "Projects at CGI"
 				}
 			],
 			"codes": [
 				{
 					"subject": "Javascript",
 					"percent": 80,
-					"comment": ""
+					"comment": "Mostly used for personal projects and last projects at work"
+				},
+				{
+					"subject": "Java",
+					"percent": 80,
+					"comment": "Mainly used in projects for my school studies"
+				},
+				{
+					"subject": "MySQL",
+					"percent": 80,
+					"comment": "Largely used during my studies and small projects at work"
+				},
+				{
+					"subject": "C/C++",
+					"percent": 40,
+					"comment": "Able to read and code basic things, but not used to tools"
+				},
+				{
+					"subject": "PHP",
+					"percent": 40,
+					"comment": "Already used with Symphony/Doctrine"
 				}
 			],
 			"languages": [
@@ -33,11 +68,11 @@
 				{
 					"subject": "English",
 					"percent": 80,
-					"comment": ""
+					"comment": "Learnt during my studies mainly, used in my job at CGI and after during my time of living in Dublin"
 				}
 			]
 		},
-		"description": "I'm an IT Engineer searching a job in Edinburgh",
+		"description": "I'm an IT Engineer searching a job in Edinburgh.\nMy main goal is being able to design largely distributed applications, as an Architect or a DevOps.\nWhile waiting to get enough experience and skills for that, I'm a Web Developer.",
 		"experiences": [
 			{
 				"begin": "2015",
