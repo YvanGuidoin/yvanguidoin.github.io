@@ -7,8 +7,8 @@
   "author": "YvanGuidoin <yvan.guidoin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --colors --config webpack.config.js",
-    "watch": "webpack --colors -w --config webpack.config.js",
+    "build": "webpack --colors --config webpack.config.js --env.production=PROD",
+    "watch": "webpack --colors -w --config webpack.config.js --env.production=DEV",
     "start": "concurrently \"npm run live\" \"npm run watch\"",
     "live": "live-server --port=8080 --ignore=node_modules,.git,source --wait=2000 --no-browser -q"
   },
