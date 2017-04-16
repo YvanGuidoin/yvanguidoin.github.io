@@ -3,11 +3,13 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 .paddingTopForNavbar { padding-top: 70px; }// use for floating navbar top
+.paddingBottom25Px {padding-bottom: 25px; } //use for skills jumbotron
 .marginZero { margin: 0px; }
 .marginKeyword {
   margin-bottom: 4px;
   margin-right: 4px;
 }
+.width200px { width: 200px; } //for carousel display in jumbotron
 .desc {
   background-color: inherit;
   border: none;

@@ -9,14 +9,12 @@ class Skill extends React.PureComponent {
   render(){
     let s = this.props.s;
     let tooltip = <Tooltip id={s.subject+this.props.k}>{s.comment}</Tooltip>;
-    let content = <span>{s.subject} <CustomProgress p={s.percent} /></span>;
+    let content = <div>{s.subject} <CustomProgress p={s.percent} /></div>;
     if(s.comment) {
       return (
-        <div>
-          <OverlayTrigger placement="bottom" overlay={tooltip}>
-            {content}
-          </OverlayTrigger>
-        </div>
+        <OverlayTrigger placement="bottom" overlay={tooltip}>
+          {content}
+        </OverlayTrigger>
       );
     }
     else return (
