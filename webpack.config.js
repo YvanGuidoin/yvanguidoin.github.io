@@ -5,7 +5,8 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   cache: true,
-  devtool: 'eval',
+  // devtool: 'eval',
+  devtool: 'cheap-source-map',
   entry: './source/index.jsx',
   output: {
     path: path.resolve(__dirname, ''),
@@ -50,27 +51,27 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.DefinePlugin({
-    //   'process.env.NODE_ENV': JSON.stringify('production')
-    // }),
-    // new LodashModuleReplacementPlugin(),
-    // new webpack.optimize.AggressiveMergingPlugin(),
-    // new webpack.optimize.OccurrenceOrderPlugin(),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   mangle: true,
-    //   compress: {
-    //     warnings: false,
-    //     pure_getters: true,
-    //     unsafe: true,
-    //     unsafe_comps: true,
-    //     screw_ie8: true
-    //   },
-    //   output: {
-    //     comments: false,
-    //   },
-    //   exclude: [/\.min\.js$/gi] // skip pre-minified libs
-    // }),
-    // new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new LodashModuleReplacementPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: true,
+      compress: {
+        warnings: false,
+        pure_getters: true,
+        unsafe: true,
+        unsafe_comps: true,
+        screw_ie8: true
+      },
+      output: {
+        comments: false,
+      },
+      exclude: [/\.min\.js$/gi] // skip pre-minified libs
+    }),
+    new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'source/index.html',
