@@ -26,7 +26,7 @@ class Me extends React.PureComponent {
     let techs = resume.skills.techs.map((o, index) => <Skill s={o} k={index} key={index} />);
     let codes = resume.skills.codes.map((o, index) => <Skill s={o} k={index} key={index} />);
     let languages = resume.skills.languages.map((o, index) => <Skill s={o} k={index} key={index} />);
-    let yvanImages = [yvan, yvan2];
+    let yvanImages = [yvan2, yvan];
     let carouselItems = yvanImages.map((o, index) =>
       <Carousel.Item key={index}>
         <Image width={200} src={o} alt="Yvan Guidoin" rounded />

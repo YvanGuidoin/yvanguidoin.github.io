@@ -19,12 +19,12 @@
 				{
 					"subject": "Docker",
 					"percent": 60,
-					"comment": "Learn myself during my 6 months in Dublin for personal projects use and testing"
+					"comment": "Learn myself during 6 months in Dublin for personal projects use and testing"
 				},
 				{
 					"subject": "MySQL/Oracle",
 					"percent": 60,
-					"comment": "Mainly used in projects for my school studies"
+					"comment": "Mainly used in projects for school studies"
 				},
 				{
 					"subject": "SAP",
@@ -41,12 +41,12 @@
 				{
 					"subject": "Java",
 					"percent": 80,
-					"comment": "Mainly used in projects for my school studies"
+					"comment": "Mainly used in projects for school studies"
 				},
 				{
 					"subject": "MySQL",
 					"percent": 80,
-					"comment": "Largely used during my studies and small projects at work"
+					"comment": "Largely used during studies and small projects at work"
 				},
 				{
 					"subject": "C/C++",
@@ -63,16 +63,16 @@
 				{
 					"subject": "French",
 					"percent": 100,
-					"comment": "My native language"
+					"comment": "Native language"
 				},
 				{
 					"subject": "English",
 					"percent": 80,
-					"comment": "Learnt during my studies mainly, used in my job at CGI and after during my time of living in Dublin"
+					"comment": "Learnt during  studies mainly, used in job at CGI and after during my time of living in Dublin"
 				}
 			]
 		},
-		"description": "I'm an IT Engineer searching a job in Edinburgh.\nMy main goal is being able to design largely distributed applications, as an Architect or a DevOps.\nWhile waiting to get enough experience and skills for that, I'm a Web Developer.",
+		"description": "I'm a Software Engineer searching for a job in Edinburgh.\nI'm interested in Web development and DevOps. My main goal is being able to design largely distributed applications.\nWhile waiting to get enough experience and skills for that, I'm a Web Developer.\nI'm used to learn new frameworks and languages in my personal and professional projects. I also like to follow the new tools and trends in IT as they appear.",
 		"experiences": [
 			{
 				"begin": "2015",
@@ -229,6 +229,7 @@
 				"begin": "2012",
 				"end": "2015",
 				"title": "MIAGE Master’s degree",
+				"description": "Postgraduate degree equivalent to an MBI, main goals are to be able to understand IT, management and methodology applied in companies to conduct projects.\n",
 				"tech_keywords": [
 					{
 						"word": "Java",
@@ -294,6 +295,7 @@
 				"begin": "2010",
 				"end": "2012",
 				"title": "Higher National Diploma in IT",
+				"description": "Technical diploma focused on learning development logic and basic management skills for a technician in IT.",
 				"tech_keywords": [
 					{
 						"word": "Java",
@@ -371,7 +373,7 @@
 			{
 				"title": "Piano",
 				"duration": "10 years",
-				"description": "during my youth",
+				"description": "during my youth, as an expression hobby.\n",
 				"gen_keywords": [
 					{
 						"word": "Focus",
@@ -390,7 +392,7 @@
 			{
 				"title": "Lived in Ireland",
 				"duration": "6 months",
-				"description": "It was a great experience and I would gladly go again, it's the main reason I'm searching a job in an english talking country",
+				"description": "It was a great experience and I would gladly go again, it's the main reason I'm searching for a job in an english speaking country",
 				"gen_keywords": [
 					{
 						"word": "English",

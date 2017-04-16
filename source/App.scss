@@ -2,7 +2,7 @@
 // @import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
-.jumbotron { margin-bottom: 0px; } // correction for too big spaces
+.jumbotron { margin-bottom: 0px; background-color: inherit;} // correction for too big spaces and color difference
 .paddingTopForNavbar { padding-top: 70px; }// use for floating navbar top
 .paddingBottom25Px {padding-bottom: 25px; } //use for skills jumbotron
 .marginZero { margin: 0px; }
