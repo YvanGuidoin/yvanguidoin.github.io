@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class CustomProgress extends React.PureComponent {
   render(){
-    let blackN = Math.max(Math.min(100, this.props.p),0)/20;
+    let blackN = parseInt(Math.max(Math.min(100, this.props.p),0)/20);
     let res = [];
     for(let i = 0; i<blackN; i++){
       res[i] = 1;

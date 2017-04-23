@@ -15,17 +15,9 @@
     "lint": "eslint ./src/**/*.jsx",
     "live": "live-server --port=8080 --ignore=node_modules,.git,src --wait=2000 --no-browser -q",
     "start": "concurrently \"npm run live\" \"npm run build:watch\"",
-    "test": "jest",
-    "test:watch": "jest --watch --notify",
+    "test": "jest --silent",
+    "test:watch": "jest --watch --notify --silent",
     "watch": "concurrently \"npm run build:watch\" \"npm run test:watch\""
-  },
-  "jest": {
-    "unmockedModulePathPatterns": [
-      "enzyme",
-      "react",
-      "react-bootstrap",
-      "react-dom"
-    ]
   },
   "dependencies": {
     "bootstrap": "3",
