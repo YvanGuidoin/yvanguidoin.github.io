@@ -1,0 +1,43 @@
+{
+  "env" :{
+    "production": {
+      "presets": [
+        "react",
+        ["es2015", {
+          "modules": false,
+          "loose": true
+        }]
+      ],
+      "plugins": [
+        "lodash",
+        "transform-runtime",
+        "transform-object-rest-spread",
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
+    },
+    "development": {
+      "presets": [
+        "react",
+        ["es2015", {
+          "modules": false,
+          "loose": true
+        }]
+      ],
+      "plugins": [
+        "lodash",
+        "transform-runtime",
+        "transform-object-rest-spread"
+      ]
+    },
+    "test": {
+      "presets": [
+        "react",
+        "es2015"
+      ],
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = function(env) {
-  let isProd = (env.production === 'PROD');
+  let isProd = (env.production === 'production');
   let devToolToUse = (isProd) ? 'cheap-source-map' : 'eval';
 
   let pluginsProduction = [
@@ -32,8 +32,8 @@ module.exports = function(env) {
   let commonsPlugins = [
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'source/index.html',
-      favicon: 'source/assets/favicon.ico'
+      template: 'src/index.html',
+      favicon: 'src/assets/favicon.ico'
     })
   ];
 
@@ -44,7 +44,7 @@ module.exports = function(env) {
   return {
     cache: true,
     devtool: devToolToUse,
-    entry: './source/index.jsx',
+    entry: './src/index.jsx',
     output: {
       path: path.resolve(__dirname, ''),
       filename: "main.bundle.js",
@@ -59,14 +59,7 @@ module.exports = function(env) {
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-            cacheDirectory: true,
-            presets: [
-              ['es2015', {
-                modules: false,
-                loose: true
-              }], 'react'
-            ],
-            plugins: ['lodash', 'transform-runtime', 'transform-object-rest-spread', 'transform-react-inline-elements', 'transform-react-constant-elements']
+            cacheDirectory: true
           }
         },
         {
