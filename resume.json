@@ -72,7 +72,7 @@
 				}
 			]
 		},
-		"description": "I'm a Software Engineer searching for a job in Edinburgh.\nI'm interested in Web development and DevOps. My main goal is being able to design largely distributed applications.\nWhile waiting to get enough experience and skills for that, I'm a Web Developer.\nI'm used to learn new frameworks and languages in my personal and professional projects. I also like to follow the new tools and trends in IT as they appear.",
+		"description": "I am a Software Engineer searching for a job in Edinburgh.\nI am interested in Web development and DevOps. My main goal is being able to design largely distributed applications.\nWhile waiting to get enough experience and skills for that, I work as a Web Developer.\nI'm used to learn new frameworks and languages in my personal and professional projects. I also like to follow the new tools and trends in IT as they appear.",
 		"experiences": [
 			{
 				"begin": "2015",
@@ -392,7 +392,7 @@
 			{
 				"title": "Lived in Ireland",
 				"duration": "6 months",
-				"description": "It was a great experience and I would gladly go again, it's the main reason I'm searching for a job in an english speaking country",
+				"description": "It was a great experience and I would gladly go again, it is the main reason I am searching for a job in an english speaking country",
 				"gen_keywords": [
 					{
 						"word": "English",
