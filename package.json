@@ -12,11 +12,12 @@
   "scripts": {
     "build": "webpack --colors --config webpack.config.js --env.production=production",
     "build:watch": "webpack --colors -w --config webpack.config.js --env.production=development",
+    "lint": "eslint ./src/**/*.jsx",
+    "live": "live-server --port=8080 --ignore=node_modules,.git,src --wait=2000 --no-browser -q",
     "start": "concurrently \"npm run live\" \"npm run build:watch\"",
-    "live": "live-server --port=8080 --ignore=node_modules,.git,source --wait=2000 --no-browser -q",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "eslint ./src/**/*.jsx"
+    "test:watch": "jest --watch --notify",
+    "watch": "concurrently \"npm run build:watch\" \"npm run test:watch\""
   },
   "jest": {
     "unmockedModulePathPatterns": [
