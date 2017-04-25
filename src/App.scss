@@ -1,6 +1,4 @@
-// @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// @import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 .jumbotron { margin-bottom: 0px; background-color: inherit;} // correction for too big spaces and color difference
 .paddingTopForNavbar { padding-top: 70px; }// use for floating navbar top

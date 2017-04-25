@@ -2,13 +2,17 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = function(env) {
   let isProd = (env.production === 'production');
   let devToolToUse = (isProd) ? 'cheap-source-map' : 'eval';
 
   let pluginsProduction = [
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('production') }),
+    new webpack.DefinePlugin({ 'process.env': {
+      NODE_ENV: JSON.stringify('production'),
+      BROWSER: JSON.stringify(true)
+    }}),
     new LodashModuleReplacementPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -21,16 +25,15 @@ module.exports = function(env) {
         unsafe: true,
         unsafe_comps: true,
         screw_ie8: true
-      },
-      output: {
-        comments: false,
-      },
-      exclude: [/\.min\.js$/gi] // skip pre-minified libs
+      }
     }),
     new webpack.NoEmitOnErrorsPlugin()
   ];
 
   let commonsPlugins = [
+    new ExtractTextPlugin({
+      filename: 'style.css'
+    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'src/index.html',
@@ -39,7 +42,7 @@ module.exports = function(env) {
   ];
 
   let pluginsToUse;
-  if (isProd) pluginsToUse = pluginsProduction.concat(commonsPlugins);
+  if (isProd) pluginsToUse = commonsPlugins.concat(pluginsProduction);
   else pluginsToUse = commonsPlugins;
 
   return {
@@ -65,31 +68,45 @@ module.exports = function(env) {
         },
         {
           test: /\.css$/,
-          exclude: /(node_modules|bower_components)/,
-          use: [{
-              loader: "style-loader"
-            },
-            {
-              loader: "css-loader"
-            },
-          ]
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [{
+              loader: "css-loader",
+              options: {
+                minimize: true
+              }
+            }]
+          })
         },
         {
           test: /\.scss$/,
-          use: [{
-              loader: "style-loader"
-            },
-            {
-              loader: "css-loader"
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [
+              {
+                loader: "css-loader",
+                options: {
+                  minimize: true
+                }
+              },
+              "sass-loader"]
+          })
         },
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
           loader: "file-loader?name=/assets/[name].[ext]"
+        },
+        {
+          test: /\.(woff|woff2)$/,
+          loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=/assets/[name].[ext]'
+        },
+        {
+          test: /\.ttf$/,
+          loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=/assets/[name].[ext]'
+        },
+        {
+          test: /\.eot$/,
+          loader: 'file-loader?name=/assets/[name].[ext]'
         }
       ]
     },
