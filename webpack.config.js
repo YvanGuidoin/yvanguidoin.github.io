@@ -13,7 +13,8 @@ module.exports = function(env) {
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
-      mangle: true,
+      sourceMap: false,
+      comments: false,
       compress: {
         warnings: false,
         pure_getters: true,
