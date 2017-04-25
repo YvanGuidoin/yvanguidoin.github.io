@@ -32,7 +32,7 @@ module.exports = function(env) {
 
   let commonsPlugins = [
     new ExtractTextPlugin({
-      filename: 'style.css'
+      filename: 'dist/style.css'
     }),
     new HtmlWebpackPlugin({
       inject: true,
@@ -56,8 +56,8 @@ module.exports = function(env) {
     entry: './src/index.jsx',
     output: {
       path: path.resolve(__dirname, ''),
-      filename: "main.bundle.js",
-      pathinfo: true
+      filename: "dist/main.bundle.js",
+      pathinfo: !isProd
     },
     resolve: {
       extensions: ['.jsx', '.js']
@@ -99,19 +99,19 @@ module.exports = function(env) {
         },
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
-          loader: "file-loader?name=/assets/[name].[ext]"
+          loader: "file-loader?name=/dist/assets/[name].[ext]"
         },
         {
           test: /\.(woff|woff2)$/,
-          loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=/assets/[name].[ext]'
+          loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=/dist/assets/[name].[ext]'
         },
         {
           test: /\.ttf$/,
-          loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=/assets/[name].[ext]'
+          loader: 'url-loader?limit=10000&mimetype=application/octet-stream&name=/dist/assets/[name].[ext]'
         },
         {
           test: /\.eot$/,
-          loader: 'file-loader?name=/assets/[name].[ext]'
+          loader: 'file-loader?name=/dist/assets/[name].[ext]'
         }
       ]
     },
