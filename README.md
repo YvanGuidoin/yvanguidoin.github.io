@@ -2,7 +2,7 @@
 
 This is an open source resume.
 To see the result go to this [address](https://yvanguidoin.github.io/).
-If you're interested, don't hesitate to contact me.
+If you're interested, don't hesitate to contact me on [Linkedin](https://fr.linkedin.com/pub/yvan-guidoin/9a/645/b47).
 
 ## Details
 
