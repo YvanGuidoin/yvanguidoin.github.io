@@ -36,6 +36,11 @@ module.exports = function(env) {
     }),
     new HtmlWebpackPlugin({
       inject: true,
+      minify: {
+        html5: true,
+        removeComments: true,
+        collapseWhitespace: true
+      },
       template: 'src/index.html',
       favicon: 'src/assets/favicon.ico'
     })
@@ -66,18 +71,18 @@ module.exports = function(env) {
             cacheDirectory: true
           }
         },
-        {
-          test: /\.css$/,
-          use: ExtractTextPlugin.extract({
-            fallback: "style-loader",
-            use: [{
-              loader: "css-loader",
-              options: {
-                minimize: true
-              }
-            }]
-          })
-        },
+        // {
+        //   test: /\.css$/,
+        //   use: ExtractTextPlugin.extract({
+        //     fallback: "style-loader",
+        //     use: [{
+        //       loader: "css-loader",
+        //       options: {
+        //         minimize: true
+        //       }
+        //     }]
+        //   })
+        // },
         {
           test: /\.scss$/,
           use: ExtractTextPlugin.extract({
