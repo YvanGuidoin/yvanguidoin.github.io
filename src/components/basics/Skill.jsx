@@ -25,7 +25,7 @@ class Skill extends React.PureComponent {
 
 Skill.propTypes = {
   s: PropTypes.object.isRequired,
-  k: PropTypes.string.isRequired
+  k: PropTypes.number.isRequired
 }
 
 export default Skill;

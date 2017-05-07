@@ -13,7 +13,7 @@ class CustomProgress extends React.PureComponent {
     }
     return (
       <span className="floatRight">
-        {res.map((c) => (c == 1) ? <span>&#9733;</span> : <span>&#9734;</span>)}
+        {res.map((c, i) => (c == 1) ? <span key={i}>&#9733;</span> : <span key={i}>&#9734;</span>)}
       </span>
     )
   }

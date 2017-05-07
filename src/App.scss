@@ -1,5 +1,6 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
+.row { margin-left: 0px; margin-right: 0px } //correct changes in bootstrap
 .jumbotron { margin-bottom: 0px; background-color: inherit;} // correction for too big spaces and color difference
 .paddingTopForNavbar { padding-top: 70px; }// use for floating navbar top
 .paddingBottom25Px {padding-bottom: 25px; } //use for skills jumbotron
