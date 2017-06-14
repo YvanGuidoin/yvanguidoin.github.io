@@ -4,6 +4,7 @@
   "extends": [ "eslint:recommended", "plugin:react/recommended" ],
   "plugins": [ "react" ],
   "parserOptions": {
+    "sourceType": "module",
     "ecmaFeatures": {
       "ecmaVersion": 6,
       "impliedStrict": true,
