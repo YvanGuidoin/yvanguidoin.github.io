@@ -26,10 +26,10 @@ class Contact extends React.PureComponent {
           <a href={"mailto:"+resume.email}>&nbsp;{resume.email}</a>
         </ContactLink>
         <ContactLink img={github} alt="GitHub Miniature">
-          <a href={resume.github} target="_blank">&nbsp;GitHub</a>
+          <a href={resume.github} rel="noopener noreferrer" target="_blank">&nbsp;GitHub</a>
         </ContactLink>
         <ContactLink>
-          <a href={resume.linkedin} target="_blank">
+          <a href={resume.linkedin} rel="noopener noreferrer" target="_blank">
             <img src={linkedin} alt="Yvan Guidoin's profile on LinkedIn" />
           </a>
         </ContactLink>
